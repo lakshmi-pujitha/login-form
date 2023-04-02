@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login Form</title>
+    <style>
+        body {
+          font-family: Montserrat,poppins, sans-serif;
+        }</style>  
+</head>
+<body>
+    <div class="bg-img">
+
+    </div>
+     <div class="container">
+        <form action="/action_page.php">
+          
+            <h2 style="text-align:center">Login with Social Media or Manually</h2>
+                
+          
+                <div >
+                  <a href="#" class="fb btn">
+                    <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                  </a>
+                  <a href="#" class="twitter btn">
+                    <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                  </a>
+                  <a href="#" class="google btn">
+                    <i class="fa fa-google fa-fw"></i> Login with Google+
+                  </a>
+                </div>
+               
+               <br>
+               
+                    <div>
+                          <p>Or sign in manually</p>
+                    </div>
+					
+					<!-- 
+					
+					create group for input and icons,
+					for icon given position  absolute and padding left for input box
+					
+					-->
+                       <div class="input-group">
+					   <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" name="username" placeholder="Username" required>
+                        </div>
+						
+						<div class="input-group">
+					   <i class="fa fa-lock" aria-hidden="true"></i>
+              <input type="password" name="password" placeholder="Password" required id="myInput">
+                        </div>
+                        
+                        <br>
+	
+        <label class="show-password-block">
+          <input type="checkbox" onclick="myFunction()"/> Show Password
+        </label>
+      
+                        
+						
+                        
+                        <br>    
+                        <a href="#" style="text-align:left;">Forgot pasword?</a>
+                        
+                        <input type="submit" value="Login">
+                        
+                        <div>Don't have an account  <a href="#">Signup</a></div>
+                            
+        </form>            
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myInput");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+        </script>
+        
+</body>
+</html>
